@@ -269,7 +269,7 @@ with col_chat:
             # User message — photo on right, bubble on left of photo
             chat_html += f'''
             <div class="msg-row user">
-                <img src="data:image/jpeg;base64,{PHOTO_B64}" class="avatar"/>
+               <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#1a6fff,#00d4ff);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;border:1.5px solid rgba(0,212,255,0.3);">👤</div>
                 <div class="bubble-user">{msg["content"]}</div>
             </div>'''
         else:
